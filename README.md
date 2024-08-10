@@ -115,7 +115,6 @@ Well,  what is the OpenTelemetry Collector and why do i need it?
 Here is my otlp/grPC collector config file [basic-otlp-collector.yaml](basic-otlp-collector.yaml), which i would be using for this step:
 
 ```yaml
----
 receivers:
   otlp:
     protocols:
@@ -142,9 +141,7 @@ service:
       receivers: [otlp]
       processors: [batch]
       exporters: [logging]
-      ```
-
-
+```
 
 **Here's a breakdown of the "basic-otlp-collector.yaml" configuration:**
 
@@ -176,3 +173,4 @@ In Summary:
 4. Finally, the collected data (metrics, logs, and traces) is output to logs, which can be useful for debugging or monitoring purposes.
 
 This configuration is a basic setup that allows me to start collecting telemetry data from applications and see it in my logs. In subsequent projects with OpenTelemetry, i will add more complex processors or use different exporters to send my data to specific monitoring or observability platforms.
+
