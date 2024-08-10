@@ -33,10 +33,9 @@ kubectl apply -f cert-manager/cert-manager.yaml
 
 #### Deploy Backend for Observability
 
-My sample app doesnt have a backend so i would be installing the following Prometheus compatible backend tools: 
+My sample app doesnt have a backend so i would be installing the following Prometheus compatible backend tools:
 
-1. [Grafana Tempo](https://github.com/grafana/tempo): Grafana Tempo is an open source, easy-to-use and high-scale distributed tracing backend, deeply integrated with Grafana, Prometheus, and Loki.
-2. [Grafana Mimir](https://github.com/grafana/mimir): Grafana Mimir is an open source software project that provides a scalable long-term storage for Prometheus
-3. [Grafana Loki](https://github.com/grafana/loki): Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus
-
+1. [Grafana Mimir](https://github.com/grafana/mimir): (For Database) Grafana Mimir is an open source software project that provides a scalable long-term storage for Prometheus.
+2. [Grafana Loki](https://github.com/grafana/loki): (For Logs) Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus.
+3. [Grafana Tempo](https://github.com/grafana/tempo): (For Traces) Grafana Tempo is an open source, easy-to-use and high-scale distributed tracing backend, deeply integrated with Grafana, Prometheus, and Loki.
 
