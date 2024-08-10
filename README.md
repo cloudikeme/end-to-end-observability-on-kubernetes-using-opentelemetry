@@ -1,7 +1,5 @@
 # Observability With OpenTelemetry Instrumentation Libraries, Collector and Kubernetes Operator
 
----
-
 __Introduction__:
 Deploying an application is
 
