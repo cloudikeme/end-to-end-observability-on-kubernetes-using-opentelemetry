@@ -174,3 +174,6 @@ In Summary:
 
 This configuration is a basic setup that allows me to start collecting telemetry data from applications and see it in my logs. In subsequent projects with OpenTelemetry, i will add more complex processors or use different exporters to send my data to specific monitoring or observability platforms.
 
+
+
+docker run --rm -it --name otel-collector -p 4317:4317 -p 4318:4318 ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector:0.74.0 --config https://raw.githubusercontent.com/pavolloffay/kubecon-eu-2023-opentelemetry-kubernetes-tutorial/main/collector-config.yaml
