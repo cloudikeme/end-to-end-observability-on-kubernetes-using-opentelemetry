@@ -68,6 +68,8 @@ kubectl port-forward -n observability-backend svc/grafana 3000:3000
 
 ![alt text](port-forward-grafana2-3000-1.png)
 
+Moving on to Implementing and deploying my OpenTelemetry collector.
+
 ---
 
 ### Implementing OpenTelemetry Collector
@@ -109,6 +111,3 @@ Well,  what is the OpenTelemetry Collector and why do i need it?
 **To learn more about the OpenTelemetry Collector Distributions ([core](https://github.com/open-telemetry/opentelemetry-collector-releases/blob/v0.74.0/distributions/otelcol/manifest.yaml) and [contrib](https://github.com/open-telemetry/opentelemetry-collector-releases/blob/v0.74.0/distributions/otelcol-contrib/manifest.yaml)), [OpenTelemetry Collector Builder](https://github.com/open-telemetry/opentelemetry-collector/blob/v0.74.0/cmd/builder) and Configuration options of individual components, explore the official OpenTelemetry Collector documentation:** [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 
 Ok! Enough theory. back to practicals!
-
-
-
