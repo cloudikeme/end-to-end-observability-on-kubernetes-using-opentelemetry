@@ -47,3 +47,11 @@ kubectl apply -f backend/backend-01.yaml
 ```
 
 ![alt text](deploy-backend01.png)
+
+Check namespaces using kubens 
+
+```bash
+kubens
+```
+
+![alt text](deploy-backend01-1.png)
