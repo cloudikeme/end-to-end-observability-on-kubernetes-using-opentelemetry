@@ -48,7 +48,7 @@ From my manifest, im deploying this into the namespace : observability-backend.
 kubectl apply -f backend/backend-01.yaml
 ```
 
-![alt text](deploy-backend01.png)
+![alt text](images/deploy-backend01.png)
 
 **Check namespaces using kubens:**
 
@@ -56,7 +56,7 @@ kubectl apply -f backend/backend-01.yaml
 kubens
 ```
 
-![alt text](kubens1.png)
+![alt text](images/kubens1.png)
 
 Your output should look like above.
 
@@ -66,7 +66,7 @@ My backend is now located in the observability-backend namespace and with **port
 kubectl port-forward -n observability-backend svc/grafana 3000:3000
 ```
 
-![alt text](port-forward-grafana2-3000-1.png)
+![alt text](images/port-forward-grafana2-3000-1.png)
 
 Moving on to Implementing and deploying my OpenTelemetry collector.
 
