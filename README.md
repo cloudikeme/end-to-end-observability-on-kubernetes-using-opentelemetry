@@ -7,8 +7,6 @@ Deploying an application is
 
 ### Prerequisites
 
-Prerequisites
-
 I am running this simultaneously on both a Windows PC running WSL2 and an old iMac i converted to Ubuntu Linux.
 
 To follow alongwith this project/tutorial, i have the following installed on my pc:
