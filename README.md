@@ -74,7 +74,7 @@ Well,  what is the OpenTelemetry Collector and why do i need it?
 
 > The OpenTelemetry Collector is a powerful, flexible, vendor-agnostic tool for collecting, processing, and exporting telemetry data. Its modular architecture comprises several key components working together to form a robust data pipeline.
 
-> **Here's a breakdown of the OpenTelemetry Collector's core components:**
+**Here's a breakdown of the OpenTelemetry Collector's core components:**
 
 * **Receivers:**  The entry point for your telemetry data. They gather data from various sources, such as:
     - **Applications:**  Instrumented with OpenTelemetry SDKs.
