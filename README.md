@@ -68,8 +68,6 @@ kubectl port-forward -n observability-backend svc/grafana 3000:3000
 
 ### Implementing OpenTelemetry Collector
 
-## OpenTelemetry Collector: A Modular Data Pipeline
-
 Well what is the OpenTelemetry Collector? 
 
 The OpenTelemetry Collector is a powerful and flexible tool for collecting, processing, and exporting telemetry data. Its modular architecture comprises several key components working together to form a robust data pipeline.
