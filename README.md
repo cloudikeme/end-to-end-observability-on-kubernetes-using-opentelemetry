@@ -1,4 +1,4 @@
-# Observability With OpenTelemetry Instrumentation Libraries, Collector and Kubernetes Operator
+# End-to-End Observability With OpenTelemetry Instrumentation Libraries, Collector and Kubernetes Operator
 
 __Introduction__:
 Deploying an application is
