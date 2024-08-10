@@ -55,3 +55,13 @@ kubens
 ```
 
 ![alt text](kubens1.png)
+
+Your output should look like above.
+
+My backend is now located in the observability-backend namespace and with **port-forwarding** the grafana service i can access my grafana dashboard which is available for visualisation with preconfigured datasources.
+
+```bash
+kubectl port-forward -n observability-backend svc/grafana 3000:3000
+```
+
+![alt text](port-forward-grafana-3000.png)
