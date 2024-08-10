@@ -11,10 +11,10 @@ I am running this simultaneously on both a Windows PC running WSL2 and an old iM
 
 To follow alongwith this project/tutorial, i have the following installed on my pc:
 
-Docker
-Kind
-Kubectl
-Kubens and Kubectx
+* [Docker]()
+* [Kind]()
+* [Kubectl]()
+* [Kubens]() and [Kubectx]()
 
 ### Getting Started
 
