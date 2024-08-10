@@ -4,6 +4,7 @@ __Introduction__:
 Deploying an application is
 
 ---
+
 ### Prerequisites
 
 Prerequisites
@@ -18,4 +19,10 @@ Here you will find our cluster setup.
 ### Getting Started
 
 #### Deploy cert-manager
+
+We start by deploying a cert-manager which is used by OpenTelemetry operator to provision TLScertificates for admission webhooks.
+
+```bash
+kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
+```
 
