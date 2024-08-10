@@ -18,9 +18,13 @@ Here you will find our cluster setup.
 
 ### Getting Started
 
+#### Setup Kind Kubernetes Cluster
+
+kind create cluster --name=otel-project --image kindest/node:v1.30.2
+
 #### Deploy cert-manager
 
-We start by deploying a cert-manager which is used by OpenTelemetry operator to provision TLScertificates for admission webhooks.
+In this next step i deploy a cert-manager which is used by OpenTelemetry operator to provision TLS certificates for admission webhooks.
 
 ```bash
 kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
