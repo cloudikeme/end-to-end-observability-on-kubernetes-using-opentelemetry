@@ -20,6 +20,8 @@ To follow along with this project/tutorial, i have the following installed on my
 
 #### Setup Kind Kubernetes Cluster
 
+I will name this cluster otel-project
+
 ```bash
 kind create cluster --name=otel-project --image kindest/node:v1.30.2
 ```
