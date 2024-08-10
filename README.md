@@ -40,7 +40,7 @@ My sample app doesnt have a backend so i would be installing the following Prome
 2. [Grafana Loki](https://github.com/grafana/loki): (For Logs) Loki is a horizontally-scalable, highly-available, multi-tenant log aggregation system inspired by Prometheus.
 3. [Grafana Tempo](https://github.com/grafana/tempo): (For Traces) Grafana Tempo is an open source, easy-to-use and high-scale distributed tracing backend, deeply integrated with Grafana, Prometheus, and Loki.
 
-From my manifest, im deploying this into the namespace : observability-backend.
+**From my manifest, im deploying this into the namespace : observability-backend.**
 
 ```bash
 kubectl apply -f backend/backend-01.yaml
@@ -48,7 +48,7 @@ kubectl apply -f backend/backend-01.yaml
 
 ![alt text](deploy-backend01.png)
 
-Check namespaces using kubens:
+**Check namespaces using kubens:**
 
 ```bash
 kubens
