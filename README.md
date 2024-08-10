@@ -10,9 +10,10 @@ Deploying an application is
 Prerequisites
 This tutorial requires just requieres two major things:
 
-A tool like docker or podman to run OCI Container Images
-Access to a Kubernetes cluster within the version 1.19-1.26
-In case you do not have access to a K8S cluster, you can use Kind or Minikube for a local Kubernetes cluster installations.
+Docker
+Kind
+Kubectl
+Kubens and Kubectx
 
 Here you will find our cluster setup.
 
@@ -27,6 +28,9 @@ kind create cluster --name=otel-project --image kindest/node:v1.30.2
 In this next step i deploy a cert-manager which is used by OpenTelemetry operator to provision TLS certificates for admission webhooks.
 
 ```bash
-kubectl apply -f https://github.com/cert-manager/cert-manager/releases/download/v1.11.0/cert-manager.yaml
+kubectl apply -f cert-manager/cert-manager.yaml
 ```
+
+#### Deploy Backend for Observability
+
 
