@@ -80,14 +80,14 @@ Well,  what is the OpenTelemetry Collector and why do i need it?
 
 **Here's a breakdown of the OpenTelemetry Collector's core components:**
 
-* **Receivers:**  The entry point for your telemetry data. They gather data from various sources, such as:
+* **Receivers:**  The entry point for my telemetry data. They gather data from various sources, such as:
     - **Applications:**  Instrumented with OpenTelemetry SDKs.
     - **Infrastructure:** Metrics and logs from systems like Kubernetes or Prometheus.
     - **Protocols:** Data received via protocols like OTLP (OpenTelemetry Protocol), Zipkin, or Jaeger.
 
     Receivers convert the collected data into a standardized format called **pData** (pipeline data) for use within the Collector.
 
-* **Processors:** Act as the transformation layer. They manipulate the pData received from Receivers, allowing you to:
+* **Processors:** Act as the transformation layer. They manipulate the pData received from Receivers, allowing me to:
     - **Filter data:** Include or exclude specific data points based on defined criteria.
     - **Enrich data:** Add valuable context or metadata to improve analysis.
     - **Transform data:**  Modify data formats or values to meet specific requirements. 
@@ -104,7 +104,7 @@ Well,  what is the OpenTelemetry Collector and why do i need it?
     - **Enabling remote sampling:** Control data ingestion rates dynamically.
     - **Integrating with other systems:** Enhance interoperability with your existing observability stack.
 
-* **Connectors:**  Bridge the gap between different pipelines, acting as both an Exporter and a Receiver.  They allow you to:
+* **Connectors:**  Bridge the gap between different pipelines, acting as both an Exporter and a Receiver.  They allow me to:
     - **Route data between pipelines:**  Create complex data flow scenarios.
     - **Process data in stages:** Apply different transformations based on the data's destination.
 
