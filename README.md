@@ -110,5 +110,69 @@ Well,  what is the OpenTelemetry Collector and why do i need it?
 
 **To learn more about the OpenTelemetry Collector Distributions ([core](https://github.com/open-telemetry/opentelemetry-collector-releases/blob/v0.74.0/distributions/otelcol/manifest.yaml) and [contrib](https://github.com/open-telemetry/opentelemetry-collector-releases/blob/v0.74.0/distributions/otelcol-contrib/manifest.yaml)), [OpenTelemetry Collector Builder](https://github.com/open-telemetry/opentelemetry-collector/blob/v0.74.0/cmd/builder) and Configuration of individual components, explore the official OpenTelemetry Collector documentation:** [https://opentelemetry.io/docs/collector/](https://opentelemetry.io/docs/collector/)
 
-Ok! Enough theory. back to practicals!
+#### Configuration
 
+Here is my otlp/grPC collector config file [basic-otlp-collector.yaml](basic-otlp-collector.yaml), which i would be using for this step:
+
+```yaml
+---
+receivers:
+  otlp:
+    protocols:
+      grpc:
+        endpoint: 0.0.0.0:4317
+processors:
+  batch:
+
+exporters:
+  logging:
+    verbosity: normal
+
+service:
+  pipelines:
+    metrics:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [logging]
+    logs:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [logging]
+    traces:
+      receivers: [otlp]
+      processors: [batch]
+      exporters: [logging]
+      ```
+
+
+
+**Here's a breakdown of the "basic-otlp-collector.yaml" configuration:**
+
+1. Receivers:
+   - The collector is set up to receive data using the OTLP (OpenTelemetry Protocol) format.
+   - It uses gRPC protocol and listens on all network interfaces (0.0.0.0) on port 4317.
+
+2. Processors:
+   - A "batch" processor is defined, which groups incoming data into batches before sending it to exporters.
+
+3. Exporters:
+   - A "logging" exporter is set up with normal verbosity, which means it will output the collected data to logs.
+
+4. Service:
+   - This section defines three pipelines: metrics, logs, and traces.
+   - Each pipeline uses the same configuration:
+     - Receives data from the OTLP receiver
+     - Processes it using the batch processor
+     - Exports it using the logging exporter
+
+In Summary:
+
+1. This config sets up a collector that can receive metrics, logs, and traces from applications using the OpenTelemetry Protocol.
+
+2. The collector listens for incoming data on all network interfaces using port 4317.
+
+3. When data comes in, it's grouped into batches to improve efficiency.
+
+4. Finally, the collected data (metrics, logs, and traces) is output to logs, which can be useful for debugging or monitoring purposes.
+
+This configuration is a basic setup that allows me to start collecting telemetry data from applications and see it in my logs. In subsequent projects with OpenTelemetry, i will add more complex processors or use different exporters to send my data to specific monitoring or observability platforms.
