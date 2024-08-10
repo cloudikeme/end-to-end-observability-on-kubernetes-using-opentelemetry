@@ -64,5 +64,4 @@ My backend is now located in the observability-backend namespace and with **port
 kubectl port-forward -n observability-backend svc/grafana 3000:3000
 ```
 
-![alt text](port-forward-grafana-3000.png)
-![alt text](port-forward-grafana2-3000.png)
+![alt text](port-forward-grafana2-3000-1.png)
